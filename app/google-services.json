@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "909495163136",
+    "firebase_url": "https://beaconapp-fbdef-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "beaconapp-fbdef",
+    "storage_bucket": "beaconapp-fbdef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909495163136:android:c244aba17ce849c8df3be5",
+        "android_client_info": {
+          "package_name": "com.example.beaconapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909495163136-qpujc5dg1bs2mqg8vup27t823v5g9cms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0TkhIkj68fAqcBHcgrWhvHuauRk5yi2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909495163136-qpujc5dg1bs2mqg8vup27t823v5g9cms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909495163136:android:c6cc26bd32d91c13df3be5",
+        "android_client_info": {
+          "package_name": "com.example.fingerprintapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909495163136-qpujc5dg1bs2mqg8vup27t823v5g9cms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0TkhIkj68fAqcBHcgrWhvHuauRk5yi2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909495163136-qpujc5dg1bs2mqg8vup27t823v5g9cms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909495163136:android:50846b69a251c8a0df3be5",
+        "android_client_info": {
+          "package_name": "com.example.rssifluctuationtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909495163136-qpujc5dg1bs2mqg8vup27t823v5g9cms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0TkhIkj68fAqcBHcgrWhvHuauRk5yi2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909495163136-qpujc5dg1bs2mqg8vup27t823v5g9cms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
