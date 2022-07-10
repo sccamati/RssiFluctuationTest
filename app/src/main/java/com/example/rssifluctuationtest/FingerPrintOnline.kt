@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.beaconapp.models.BeaconModel
 import com.example.beaconapp.models.OfflineRp
-import com.example.beaconapp.models.OnlinePoint
 import com.example.fingerprintapp.models.TestPoint
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
@@ -98,7 +97,7 @@ class FingerPrintOnline : AppCompatActivity() {
         if(beacons.size > 0){
             beaconName.text = reachedBeacons[0].Name
 
-            beaconRSSI.text = reachedBeacons[0].RSSI.toString()
+            beaconRSSI.text = reachedBeacons[0].RSSIFilter.toString()
         }
 
         try {
@@ -129,7 +128,7 @@ class FingerPrintOnline : AppCompatActivity() {
     }
 
     fun SaveTestPoint(view: View) {
-        saveTestPoint = 750
+        saveTestPoint = 200
         isSaveTestPoints = true
     }
 
@@ -169,13 +168,13 @@ class FingerPrintOnline : AppCompatActivity() {
 
             if (CheckFoundBeacons(currentBeacons)) {
                 for (beacon: Beacon in currentBeacons) {
-                    reachedBeacons.find { it.Name == beacon.bluetoothName }!!.RSSI =
+                    reachedBeacons.find { it.Name == beacon.bluetoothName }!!.RSSIFilter =
                         beacon.runningAverageRssi
                 }
             } else {
                 reachedBeacons.clear()
                 for (beacon: Beacon in currentBeacons) {
-                    reachedBeacons.add(BeaconModel(beacon.bluetoothName, beacon.runningAverageRssi))
+                    reachedBeacons.add(BeaconModel(beacon.bluetoothName, beacon.rssi, beacon.runningAverageRssi))
                 }
             }
 
